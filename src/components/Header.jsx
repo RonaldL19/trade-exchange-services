@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import  images  from '../assets/images/logo-trade-exchange.png'
+import  images  from '../assets/images/logo-trade.png'
 import '../styles/Header.css'
 
 const Header = () => {

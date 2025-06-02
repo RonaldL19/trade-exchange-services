@@ -1,0 +1,114 @@
+.footer-father {
+    width: 100%;
+    height: 300px;
+    background-color: #0200a0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-left {
+    width: 25%;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    line-height: 5px;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.footer-center {
+    width: 25%;
+    position: absolute;
+    top: 30px;
+    left: 440px;
+    line-height: 12px;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.footer-center2 {
+    width: 25%;
+    position: absolute;
+    top: 30px;
+    right: 330px;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.footer-rigth {
+    position: absolute;
+    top: 30px;
+    right: 130px;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.footer-image {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.footer-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.titles-footer {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.redes-footer img {
+    cursor: pointer;
+}
+
+/* Opcional: responsive para móviles */
+@media (max-width: 768px) {
+    .footer-father {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-center2,
+    .footer-rigth {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-contacts {
+        justify-content: center;
+    }
+}
