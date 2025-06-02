@@ -1,7 +1,6 @@
-import React from 'react'
 import { useState } from 'react';
-import  images  from '../assets/images/logo-trade.png'
-import '../styles/Header.css'
+import images from '../assets/images/logo-trade.png';
+import '../styles/Header.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

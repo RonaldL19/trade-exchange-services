@@ -1,13 +1,13 @@
-import Header from "./Header"
+import { CarouselSlider } from "./Carousel"
 import Footer from "./Footer"
-import Carousel from "./Carousel"
+import Header from "./Header"
 
 export const ProductCard = () => {
-    return (
-        <>
-            <Header/>
-            <Carousel/>
-            <Footer/>
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <CarouselSlider />
+      <Footer />
+    </>
+  )
 }
