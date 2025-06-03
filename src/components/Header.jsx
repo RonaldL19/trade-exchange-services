@@ -4,13 +4,19 @@ import '../styles/Header.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className='header-father'>
       <div className='header-logo'>
-        <img className='header-image' src={images} alt="" />
+        <img className='header-image' src={images} alt="Logo" />
       </div>
-      <div className='header-options'>
+
+      <button className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
+
+      <div className={`header-options ${menuOpen ? 'show' : ''}`}>
         <button>Inicio</button>
         <button>Nosotros</button>
         <nav className="menu-services">
@@ -32,11 +38,11 @@ const Header = () => {
             )}
           </div>
         </nav>
-        <button className="">Blog</button>
-        <button className="">Contacto</button>
+        <button>Blog</button>
+        <button>Contacto</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
