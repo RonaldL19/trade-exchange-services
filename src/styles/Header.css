@@ -96,6 +96,10 @@
     .menu-toggle {
       display: block;
     }
+
+    .header-father {
+      padding: 0;
+    }
   
     .header-options {
       display: none;
@@ -103,7 +107,7 @@
       width: 100%;
       gap: 10px;
       margin-top: 10px;
-      background-color: #0200a0;
+      background-color: #0d1117;
     }
   
     .header-options.show {

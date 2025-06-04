@@ -135,10 +135,15 @@
     }
 
     .logo-box .line {
-        width: 100%;
+        width: 75%;
         border: 1px solid #1d9bf0;
         margin-bottom: 10px;
-        right: 0;
+        right: 45px;
+    }
+
+    .logo-box img {
+        left: 125px;
+        position: relative;
     }
 
     .icon.default-icon {
@@ -146,10 +151,16 @@
         height: auto;
     }
 
+    .text-are {
+        position: relative;
+        right: 15px;
+        text-align: center;
+    }
+
     .footer-info {
         position: relative;
-        bottom: 0;
-        right: 0;
+        top: 210px;
+        left: 180px;
         margin-top: 15px;
         align-self: flex-end;
         width: fit-content;

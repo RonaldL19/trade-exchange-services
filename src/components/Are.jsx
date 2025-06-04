@@ -9,13 +9,15 @@ const Are = () => {
                     <div className='line'></div>
                     <img src={logo} alt="Icono principal" className="icon default-icon" />
                 </div>
-                <h1>¿Quiénes somos?</h1>
-                <h2>ENVIOS INTERNACIONALES</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                    feugiat nunc lobortis rhoncus eleifend. Curabitur et facilisis dui.
-                </p>
-                <button className="btn-learn">APRENDE MÁS</button>
+                <div className='text-are'>
+                    <h1>¿Quiénes somos?</h1>
+                    <h2>ENVIOS INTERNACIONALES</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                        feugiat nunc lobortis rhoncus eleifend. Curabitur et facilisis dui.
+                    </p>
+                    <button className="btn-learn">APRENDE MÁS</button>
+                </div>
             </div>
 
             <div className="right">

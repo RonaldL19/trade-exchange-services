@@ -1,34 +1,53 @@
 .father-shipping {
     display: flex;
-    gap: 30px;
     justify-content: center;
-    margin-top: 100px;
+    gap: 100px;
 }
 
-.service-card1 {
+.service-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     border: 2px solid #1a1a1a;
     border-radius: 16px;
-    padding: 30px 20px;
-    transition: all 0.3s ease;
-    background: #0d1117;
+    padding: 0;
+    overflow: hidden;
     position: relative;
+    background: #0d1117;
     text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.service-card2 {
+.main-image {
     width: 100%;
-    max-width: 350px;
-    border: 2px solid #1a1a1a;
-    border-radius: 16px;
-    padding: 30px 20px;
-    transition: all 0.3s ease;
-    background: #0d1117;
-    position: relative;
-    text-align: left;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
 }
 
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d1117;
+    padding: 40px 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.service-card:hover .main-image {
+    opacity: 0;
+}
+
+.service-card:hover .card-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Reutilizamos los estilos de iconos */
 .icon-container {
     width: 60px;
     height: 60px;
@@ -50,23 +69,30 @@
     opacity: 0;
 }
 
-.service-card:hover .default-icon {
+.card-content:hover .default-icon {
     opacity: 0;
 }
 
-.service-card:hover .hover-icon {
+.card-content:hover .hover-icon {
     opacity: 1;
 }
 
+.content-are {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
 .title {
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px 0;
     color: #fff;
     font-weight: bold;
 }
 
 .description {
-    font-size: 15px;
+    font-size: 18px;
     color: #fff;
     line-height: 1.5;
 }
@@ -88,3 +114,52 @@
 .link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .father-shipping {
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+      align-items: center;
+    }
+  
+    .service-card {
+      max-width: 90%;
+      width: 100%;
+    }
+  
+    .card-content {
+      position: static;
+      opacity: 1 !important;
+      pointer-events: auto;
+      padding: 20px 0;
+    }
+  
+    .main-image {
+      display: none;
+    }
+  
+    .content-are {
+      top: 0;
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .description {
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    .links {
+      align-items: center;
+    }
+  
+    .link {
+      font-size: 16px;
+    }
+  }
+  

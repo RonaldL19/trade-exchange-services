@@ -62,8 +62,6 @@
   }
   
   .redes-footer img {
-    width: 24px;
-    height: 24px;
     cursor: pointer;
   }
   
@@ -73,6 +71,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 0;
     }
   
     .footer-left,
