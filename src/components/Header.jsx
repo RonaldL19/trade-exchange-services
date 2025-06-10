@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='header-father'>
+    <header className='header-father'>
       <div className='header-logo'>
         <img className='header-image' src={images} alt="Logo" />
       </div>
@@ -41,7 +41,7 @@ const Header = () => {
         <button>Blog</button>
         <button>Contacto</button>
       </div>
-    </div>
+    </header>
   );
 };
 

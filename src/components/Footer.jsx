@@ -9,8 +9,7 @@ const Footer = () => {
     <div className='footer-father'>
       <div className='footer-left'>
         <img className='footer-image' src={images} alt="Logo" />
-        <div className='footer-contacts'>
-          
+        <div className='footer-contacts'>          
           <p>3213900563</p>
         </div>
         <div className='footer-contacts'>
