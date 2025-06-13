@@ -21,7 +21,7 @@ const Shipping = () => {
                 </div>
             </div>
 
-            {/* CARD 2 */}
+            {/* CARD 2 
             <div className="service-card">
                 <img src={USA} alt="Mudanzas Locales" className="main-image" />
                 <div className="card-content">
@@ -35,7 +35,7 @@ const Shipping = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

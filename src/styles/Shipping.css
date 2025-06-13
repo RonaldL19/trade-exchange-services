@@ -1,7 +1,9 @@
 .father-shipping {
-    display: flex;
+    margin: auto;
+    width: 100%;
+    /* display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 100px; */
 }
 
 .service-card {
