@@ -1,4 +1,5 @@
 import logo from '../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 import '../styles/Are.css';
 
 const Are = () => {
@@ -16,7 +17,10 @@ const Are = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
                         feugiat nunc lobortis rhoncus eleifend. Curabitur et facilisis dui.
                     </p>
-                    <button className="btn-learn">APRENDE MÁS</button>
+                    <Link to="/quienes-somos">
+                        <button className="btn-learn">APRENDE MÁS</button>
+                    </Link>
+
                 </div>
             </div>
 

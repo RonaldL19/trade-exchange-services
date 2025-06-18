@@ -1,11 +1,10 @@
-.prueba-flex {
+.medium-home {
     display: flex;
-    width: 80%;
     margin: auto;
 }
 
 @media (max-width: 768px) {
-    .prueba-flex {
+    .medium-home {
         flex-direction: column;
         width: 95%;
         gap: 40px;

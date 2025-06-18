@@ -1,10 +1,9 @@
-
-import WeAre from "../components/WeAre"
+import CoverAre from "../components/CoverAre"
 
 export const WhoWeAre = () => {
   return (
     <>
-      <WeAre />
+      <CoverAre />
     </>
   )
 }

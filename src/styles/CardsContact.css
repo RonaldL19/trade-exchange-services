@@ -1,0 +1,244 @@
+.contact-section {
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-globalCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.contact-card.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-card.glass:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-card h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00c6ff;
+}
+
+.contact-card p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.9;
+}
+
+/* --- Formulario y mapa --- */
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: #1a1a2e;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    min-width: 300px;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #00c6ff;
+}
+
+.input-group {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.input-group>div {
+    flex: 1;
+}
+
+.input-full {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #4a6ee0;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00c6ff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.button-contact {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.button-contact:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+/* Mapa */
+
+.map-container {
+    flex: 1;
+    min-height: 400px;
+    width: 100%;
+}
+
+/* Modal de éxito */
+
+.success-modal {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+    .contact-globalCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .map-container {
+        min-height: 300px;
+    }
+
+    .contact-img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {}
+
+    .form-container h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    input,
+    textarea {
+        width: 93%;
+        font-size: 13px;
+    }
+
+    .button-contact {
+        width: 100%;
+    }
+
+    .contact-img {
+        width: 25px;
+    }
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import images from '../assets/images/logo-trade.png';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -8,17 +9,21 @@ const Header = () => {
 
   return (
     <header className='header-father'>
-      <div className='header-logo'>
-        <img className='header-image' src={images} alt="Logo" />
-      </div>
+      <Link to="/" className="header-logo">
+        <img className="header-image" src={images} alt="Logo" />
+      </Link>
 
       <button className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </button>
 
       <div className={`header-options ${menuOpen ? 'show' : ''}`}>
-        <button>Inicio</button>
-        <button>Nosotros</button>
+        <Link to="/" className="header-logo">
+          <button>Inicio</button>
+        </Link>
+        <Link to="/quienes-somos">
+          <button className="btn-nosotros">Nosotros</button>
+        </Link>
         <nav className="menu-services">
           <div
             className="dropdown"
@@ -32,14 +37,18 @@ const Header = () => {
             {isOpen && (
               <div className="dropdown-content">
                 <ul>
-                  <li>Servicio Marítimo</li>
+                  <Link to="/Servicios" className="header-logo">
+                    <li>Servicio Marítimo</li>
+                  </Link>
                 </ul>
               </div>
             )}
           </div>
         </nav>
-        <button>Blog</button>
-        <button>Contacto</button>
+        {/* <button>Blog</button> */}
+        <Link to="/Contacto">
+          <button>Contacto</button>
+        </Link>
       </div>
     </header>
   );

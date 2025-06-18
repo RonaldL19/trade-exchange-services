@@ -7,12 +7,14 @@ import '../styles/Home.css';
 export const HomePage = () => {
   return (
     <>
-      <CarouselSlider />
-      <div className="prueba-flex">
-        <Shipping />
-        <Are />
+      <div className="container">
+        <CarouselSlider />
+        <div className="medium-home">
+          <Shipping />
+          <Are />
+        </div>
+        <FourCards />
       </div>
-      <FourCards />
     </>
   )
 }

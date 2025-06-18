@@ -41,6 +41,8 @@
     color: white;
     cursor: pointer;
     transition: transform 0.2s ease;
+    position: relative;
+    right: 10px;
   }
   
   .menu-services button:hover,

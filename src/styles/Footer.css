@@ -64,6 +64,11 @@
   .redes-footer img {
     cursor: pointer;
   }
+
+  .social-iconFooter {
+    width: 20px;
+    height: 20px;
+  }
   
   /* Responsive para tablet y móviles */
   @media (max-width: 768px) {
@@ -88,6 +93,11 @@
   
     .redes-footer {
       justify-content: center;
+    }
+
+    .social-iconFooter {
+      width: 20px;
+      height: 20px;
     }
   }
   

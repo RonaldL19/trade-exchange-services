@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import We from '../assets/images/somos.png';
 import logo from '../assets/images/logo.png';
-import '../styles/WeAre.css';
+import '../styles/CoverAre.css';
 
-const WeAre = () => {
+const CoverAre = () => {
     return (
-        <section className="quienes-somos">
+        <section className="container-weAre">
             <div className="container">
                 <div className="front-page">
                     <img className="img-we" src={We} alt="Imagen principal" />
+                    <div className="overlay"></div>
                     <h2 className="title-are">¿Quiénes somos?</h2>
                 </div>
 
@@ -73,11 +75,14 @@ const WeAre = () => {
 
                 <div className="back">
                     <p className="back-text">Agencia respaldada por:</p>
-                    <img className="img-back" src="https://americanlogisticcargo.com/wp-content/uploads/2023/04/logo-american-1.png" alt="Logo respaldo" />
+                    <a href="https://americanlogisticcargo.com/" className="header-logo" target="_blank" rel="noopener noreferrer">
+                        <img className="img-back" src="https://americanlogisticcargo.com/wp-content/uploads/2023/04/logo-american-1.png" alt="Logo respaldo" />
+                    </a>
+
                 </div>
             </div>
         </section>
     );
 };
 
-export default WeAre;
+export default CoverAre;
