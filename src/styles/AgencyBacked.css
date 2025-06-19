@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.back {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.back-text {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.img-back {
+    width: 300px;
+    max-width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.img-back:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .back-text {
+        font-size: 26px;
+    }
+}

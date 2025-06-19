@@ -10,6 +10,7 @@
     margin: 0 auto;
 }
 
+/* Portada principal */
 .front-page {
     position: relative;
     height: 480px;
@@ -21,7 +22,6 @@
     justify-content: center;
 }
 
-/* Imagen con efecto de zoom */
 .img-we {
     width: 100%;
     height: 100%;
@@ -31,7 +31,6 @@
     filter: brightness(0.7);
 }
 
-/* Overlay con degradado oscuro transparente */
 .overlay {
     position: absolute;
     top: 0;
@@ -41,7 +40,6 @@
     z-index: 1;
 }
 
-/* Texto con estilo moderno y elegante */
 .title-are {
     position: absolute;
     z-index: 2;
@@ -60,6 +58,7 @@
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/* Secciones de contenido */
 .feature {
     display: flex;
     align-items: center;
@@ -131,27 +130,7 @@
     color: #1d9bf0;
 }
 
-.back {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.back-text {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.img-back {
-    width: 300px;
-    max-width: 90%;
-    transition: transform 0.3s ease;
-}
-
-.img-back:hover {
-    transform: scale(1.05);
-}
-
-/* Animaciones suaves */
+/* Animaciones */
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
@@ -186,7 +165,6 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-
     .feature,
     .feature.reverse {
         flex-direction: column;
@@ -197,31 +175,25 @@
         margin-top: 20px;
     }
 
-    @media (max-width: 768px) {
-        .title-are {
-            font-size: 32px;
-            padding: 16px 24px;
-            border-radius: 10px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .front-page {
-            height: 300px;
-        }
-    
-        .title-are {
-            font-size: 24px;
-            padding: 12px 18px;
-        }
+    .title-are {
+        font-size: 32px;
+        padding: 16px 24px;
+        border-radius: 10px;
     }
 
     .feature-icon img {
         width: 80px;
         height: 80px;
     }
+}
 
-    .back-text {
-        font-size: 26px;
+@media (max-width: 480px) {
+    .front-page {
+        height: 300px;
+    }
+
+    .title-are {
+        font-size: 24px;
+        padding: 12px 18px;
     }
 }

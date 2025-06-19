@@ -11,7 +11,7 @@
 .maritime-title {
     font-size: 48px;
     font-weight: 700;
-    color: #00cfff;
+    color: #1d9bf0;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -52,18 +52,18 @@
     object-fit: cover;
 }
 
-.card-content {
+.card-MaritimContent {
     padding: 22px;
 }
 
-.card-content h3 {
+.card-MaritimContent h3 {
     font-size: 24px;
-    color: #00cfff;
+    color: #1d9bf0;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.card-content p {
+.card-MaritimContent p {
     font-size: 16px;
     color: #dddddd;
     margin-bottom: 6px;
@@ -78,7 +78,7 @@
 
 .info-card {
     background: #1a1a1a;
-    border-left: 5px solid #00cfff;
+    border-left: 5px solid #1d9bf0;
     padding: 32px;
     border-radius: 16px;
     box-shadow: 0 6px 24px rgba(0, 255, 255, 0.05);
@@ -91,7 +91,7 @@
 
 .info-card h4 {
     font-size: 22px;
-    color: #00cfff;
+    color: #1d9bf0;
     margin-bottom: 14px;
     font-weight: 600;
 }
@@ -113,10 +113,11 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cta-button {
-    background: #00cfff;
+    background: #1d9bf0;
     color: #000;
     font-weight: bold;
     font-size: 18px;
@@ -151,3 +152,4 @@
         width: 100%;
     }
 }
+

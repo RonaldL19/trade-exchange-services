@@ -5,7 +5,6 @@ import '../styles/Shipping.css';
 const Shipping = () => {
     return (
         <div className="father-shipping">
-            {/* CARD 1 */}
             <div className="service-card">
                 <img src={Colombia} alt="Mudanzas a Colombia" className="main-image" />
                 <div className="card-content">

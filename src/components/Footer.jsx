@@ -1,36 +1,50 @@
 import facebook from '../assets/images/facebook.png'
 import instagram from '../assets/images/instagram.png'
 import images from '../assets/images/logo-trade.png'
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css'
 import { PhoneIcon } from './PhoneIcon'
+import { LocationIcon } from './PhoneIcon'
+import { EmailIcon } from './PhoneIcon'
 
 const Footer = () => {
   return (
     <div className='footer-father'>
       <div className='footer-left'>
-        <img className='footer-image' src={images} alt="Logo" />
+        <Link to="/" className="header-logo">
+          <img className="header-image" src={images} alt="Logo" />
+        </Link>
         <a href="https://wa.me/17863977418" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className='footer-contacts'>
-            <p>3213900563</p>
+            <PhoneIcon />
+            <p>+1 (786) 397-7418</p>
           </div>
         </a>
         <div className='footer-contacts'>
-          <PhoneIcon />
-          <p>correo@gmail.com</p>
+          <EmailIcon />
+          <p>tradeexchangeservice@gmail.com</p>
         </div>
         <div className='footer-contacts'>
-          <svg className='footer-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="white" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" /></svg>
-          <p>calle 49a bis sur 10D-20</p>
+          <LocationIcon />
+          <p>4797 North West 72 Avenue Miami, Florida 33166</p>
         </div>
       </div>
 
       <div className='footer-center'>
         <h1 className='titles-footer'>ENLACES</h1>
         <ul className="footer-links">
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Blog</li>
-          <li>Contacto</li>
+          <Link to="/" className="header-logo">
+            <li className="links-footer">Inicio</li>
+          </Link>
+          <Link to="/quienes-somos">
+            <li className="links-footer">Nosotros</li>
+          </Link>
+          <Link to="/Servicios" className="header-logo">
+            <li className="links-footer">Servicio Marítimo</li>
+          </Link>
+          <Link to="/Contacto">
+            <li className="links-footer">Contacto</li>
+          </Link>
         </ul>
       </div>
 
