@@ -5,11 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Portada principal */
 .front-page {
     position: relative;

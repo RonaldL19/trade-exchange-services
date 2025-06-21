@@ -40,6 +40,13 @@
     pointer-events: none;
 }
 
+.content-areCol {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
 .service-card:hover .main-image {
     opacity: 0;
 }
@@ -121,12 +128,10 @@
     .father-shipping {
       flex-direction: column;
       gap: 40px;
-      padding: 20px;
       align-items: center;
     }
   
     .service-card {
-      max-width: 90%;
       width: 100%;
     }
   
@@ -141,9 +146,9 @@
       display: none;
     }
   
-    .content-are {
-      top: 0;
-      width: 100%;
+    .content-areCol {
+      position: relative;
+      bottom: 22px;
     }
   
     .title {

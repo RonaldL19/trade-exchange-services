@@ -1,0 +1,132 @@
+.price-section {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 20px;
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.price-title {
+  font-size: 42px;
+  color: #1d9bf0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.price-subtitle {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.price-btn {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.price-btn:hover {
+  background-color: #1d9bf0;
+}
+
+.price-subheading {
+  font-size: 28px;
+  text-align: center;
+  color: #1d9bf0;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.price-column {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.price-column:hover {
+  transform: translateY(-5px);
+}
+
+.price-column p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+.price-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.price-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.price-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 320px;
+}
+
+.price-card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.price-cta {
+  background-color: #1d9bf0;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.price-cta:hover {
+  background-color: #1d9bf0;
+}
+
+@media (max-width: 768px) {
+  .price-title {
+    font-size: 32px;
+  }
+
+  .price-subheading {
+    font-size: 24px;
+  }
+
+  .price-cta,
+  .price-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

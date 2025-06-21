@@ -6,7 +6,7 @@
 @media (max-width: 768px) {
     .medium-home {
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         gap: 40px;
     }
 }

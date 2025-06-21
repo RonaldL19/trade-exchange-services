@@ -1,4 +1,5 @@
 import Colombia from '../assets/images/mudanzas-colombia.png';
+import { Link } from 'react-router-dom';
 import USA from '../assets/images/mudanzas-locales.png';
 import '../styles/Shipping.css';
 
@@ -8,14 +9,14 @@ const Shipping = () => {
             <div className="service-card">
                 <img src={Colombia} alt="Mudanzas a Colombia" className="main-image" />
                 <div className="card-content">
-                    <div className='content-are'>
+                    <div className='content-areCol'>
                         <h3 className="title">Servicio Marítimo</h3>
                         <p className="description">
                             Nuestro servicio de envíos de paquetería Courier internacional aéreo garantiza una entrega puerta a puerta rápida y confiable en toda Centro y Sur América. Los envíos aéreos son la opción ideal cuando la velocidad es esencial.
                         </p>
-                        <div className="links">
-                            <a href="#" className="link">Ver Servicio →</a>
-                        </div>
+                        <Link to="/Servicios" className="links">
+                            <li className="link">Ver Servicio</li>
+                        </Link>
                     </div>
                 </div>
             </div>
