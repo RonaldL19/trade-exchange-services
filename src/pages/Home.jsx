@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Are from "../components/Are";
 import { CarouselSlider } from "../components/Carousel";
+import TrackPackage from '../components/TrackPackage';
 import FourCards from "../components/FourCards";
 import Shipping from "../components/Shipping";
 import Footer from '../components/Footer';
@@ -14,6 +15,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="container">
+        <TrackPackage />
         <CarouselSlider />
         <div className="medium-home">
           <Shipping />

@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import We from '../assets/images/somos.png';
 import logo from '../assets/images/logo.png';
+import commitment from '../assets/images/commitment.png';
+import weDo from '../assets/images/weDo.png';
+import AreMoving from '../assets/images/AreMoving.png';
+import ArePlan from '../assets/images/ArePlan.png';
 import '../styles/CoverAre.css';
 
 const CoverAre = () => {
@@ -44,7 +48,7 @@ const CoverAre = () => {
                     </p>
                 </div>
                 <div className="feature-icon">
-                    <img src="icono-tiempo.png" alt="Icono tiempo" />
+                    <img src={commitment} alt="Icono tiempo" />
                 </div>
             </div>
 
@@ -68,7 +72,16 @@ const CoverAre = () => {
                     </ul>
                 </div>
                 <div className="feature-icon">
-                    <img src="icono-seguridad.png" alt="Icono seguridad" />
+                    <img src={weDo} alt="Icono seguridad" />
+                </div>
+            </div>
+
+            <div className="Cover-cards">
+                <div className="Cover-card">
+                    <img src={AreMoving} alt="Presupuesto sin costo" className="Cover-card-img" />
+                </div>
+                <div className="Cover-card">
+                    <img src={ArePlan} alt="Servicio al cliente" className="Cover-card-img" />
                 </div>
             </div>
         </section>

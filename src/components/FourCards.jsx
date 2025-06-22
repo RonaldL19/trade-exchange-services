@@ -1,15 +1,16 @@
 import '../styles/FourCards.css';
+import card1 from '../assets/images/card1.png';
 
 const cardsData = [
   {
-    title: 'Joven de 19 años sería responsable de intento de robo en norte de Bogotá; iba en bicicleta',
-    text: 'El presunto delincuente habría disparado contra una de sus víctimas, en medio del atraco en el barrio Quinta Camacho, durante la tarde de este lunes festivo.',
-    img: 'https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP4548237-h-m.webp',
+    title: 'Regresa a Colombia con beneficios de Ley 1565',
+    text: 'Aprovecha el Plan Retorno y trae tus pertenencias sin pagar impuestos. ¡Mudanza aérea o marítima fácil, segura y con respaldo legal!',
+    img: card1,
     color: '#1d9bf0'
   },
   {
-    title: 'D1 responde a acusaciones de supuestas condiciones laborales "inadecuadas" con trabajadores',
-    text: 'La empresa respondió públicamente a las acusaciones, afirmando que cumplen con la normativa laboral y que están abiertos al diálogo con sus empleados.',
+    title: 'Regresa a Colombia con beneficios de Ley 1565',
+    text: 'Aprovecha el Plan Retorno y trae tus pertenencias sin pagar impuestos. ¡Mudanza aérea o marítima fácil, segura y con respaldo legal!',
     img: 'https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP4553482-h-m.webp',
     color: '#1d9bf0'
   },
@@ -20,10 +21,11 @@ const cardsData = [
     color: '#1d9bf0'
   },
   {
-    title: 'Altafulla frenó duro a Melissa Gate en ‘LCFLF’ y lo aplauden en redes: “El único capaz”',
-    text: 'La escena del episodio generó miles de comentarios en redes sociales, destacando la actitud del personaje frente a las injusticias.',
-    img: 'https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP4557385A-h-m.webp',
-    color: '#1d9bf0'
+    title: 'De regreso a Colombia, entrevista a Diana Rueda CEO American Logistic Cargo Corp.”',
+    text: 'Escuche esta entrevista con Diana Rueda para que aprenda del proceso de regresar a Colombia a disfrutar su retiro. Conozca la Ley de Retorno, la exención de impuestos, proceso de mudanza y mucho mas.',
+    img: 'https://americanlogisticcargo.com/wp-content/uploads/2023/06/Screenshot_4-1024x532.png',
+    color: '#1d9bf0',
+    link: 'https://youtu.be/h-DqLKXSQ8I?si=1IzGSGg65AhJql5C'
   }
 ];
 
@@ -31,20 +33,23 @@ const FourCards = () => {
   return (
     <div className="cards-container">
       {cardsData.map((card, index) => (
-        <div
-          className="news-card"
+        <a
           key={index}
+          href={card.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="news-card"
           style={{ backgroundImage: `url(${card.img})` }}
         >
           <div className="overlay">
             <span className="category">{card.title}</span>
-            <h3 className="headline">{card.subtitle}</h3>
             <p className="summary">{card.text}</p>
             <div className="underline" style={{ backgroundColor: card.color }}></div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
+
   );
 };
 

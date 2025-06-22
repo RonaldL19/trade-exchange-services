@@ -68,6 +68,11 @@
     border-radius: 4px;
 }
 
+.news-card {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .cards-container {
@@ -91,13 +96,18 @@
     .summary {
         font-size: 0.8rem;
         max-height: none;
-        /* Mostrar el texto completo en mobile */
         opacity: 1;
+        width: 90%;
+        padding: 0 10px;
     }
 
     .news-card:hover .summary {
         /* Evitar hover en mobile, ya que no aplica */
         max-height: none;
         opacity: 1;
+    }
+
+    .category {
+        display: none;
     }
 }

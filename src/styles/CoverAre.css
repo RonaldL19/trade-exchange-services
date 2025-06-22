@@ -125,6 +125,29 @@
     color: #1d9bf0;
 }
 
+.Cover-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Cover-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 320px;
+}
+
+.Cover-card-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 /* Animaciones */
 .fade-in {
     animation: fadeIn 1s ease-in-out;
@@ -160,6 +183,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
     .feature,
     .feature.reverse {
         flex-direction: column;

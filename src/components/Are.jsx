@@ -14,8 +14,7 @@ const Are = () => {
                     <h1>¿Quiénes somos?</h1>
                     <h2>ENVIOS INTERNACIONALES</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                        feugiat nunc lobortis rhoncus eleifend. Curabitur et facilisis dui.
+                        Somos una empresa con raices latinas que conecta Estados Unidos con Colombia a través de envíos marítimos seguros, personalizados y sin complicaciones, cuidamos cada envío como si fuera nuestro.
                     </p>
                     <Link to="/quienes-somos">
                         <button className="btn-learn">APRENDE MÁS</button>
@@ -35,4 +34,4 @@ const Are = () => {
     );
 };
 
-export default Are; 1
+export default Are; 
