@@ -24,10 +24,12 @@ const Are = () => {
             </div>
 
             <div className="right">
-                <div className="footer-info">
+                {/* SE AGREGO ESTE COMENTARIO A FALTA DE QUE ME PROPORCIONEN EL INSTAGRAM PARA AGREGARLO ACA
+                <div className="footer-info">  
                     <img src={logo} alt="mundo" />
                     @sitioincreible
                 </div>
+                */}
             </div>
         </div>
 

@@ -20,7 +20,6 @@
     transform: scale(1.05);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .back-text {
         font-size: 26px;

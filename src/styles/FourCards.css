@@ -102,7 +102,6 @@
     }
 
     .news-card:hover .summary {
-        /* Evitar hover en mobile, ya que no aplica */
         max-height: none;
         opacity: 1;
     }

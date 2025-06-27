@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import images from '../assets/images/logo-trade.png';
-import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   return (
     <header className='header-father'>

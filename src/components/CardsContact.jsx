@@ -15,7 +15,7 @@ const CardsContact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('https://formspree.io/f/mjkrrnpp', {
+        const response = await fetch('https://formspree.io/f/xrbkondp', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
@@ -34,7 +34,7 @@ const CardsContact = () => {
         <section className="contact-section">
             <div className="contact-globalCards">
                 {[
-                    { icon: location, title: 'NUESTRA OFICINA PRINCIPAL', text: '4797 North West 72 Avenue Miami, Florida 33166' },
+                    { icon: location, title: 'NUESTRA OFICINA PRINCIPAL', text: '4797 North West 72 Avenue Miami, Florida 33166', link: 'https://maps.app.goo.gl/udtW3Y63dAum2t9c6' },
                     { icon: whatsapp, title: 'WHATSAPP', text: '+1 (786) 397-7418', link: 'https://wa.me/17863977418' },
                     { icon: email, title: 'CORREO ELECTRÓNICO', text: 'tradeexchangeservice@gmail.com' }
                 ].map(({ icon, title, text, link }, i) => {

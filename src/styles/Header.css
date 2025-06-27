@@ -19,7 +19,6 @@
     height: auto;
   }
   
-  /* Ocultar menú por defecto en mobile */
   .header-options {
     display: flex;
     gap: 20px;
@@ -83,7 +82,6 @@
     text-decoration: underline;
   }
   
-  /* Botón menú hamburguesa */
   .menu-toggle {
     display: none;
     font-size: 26px;
@@ -93,7 +91,6 @@
     cursor: pointer;
   }
   
-  /* RESPONSIVE */
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;

@@ -133,7 +133,6 @@
     transform: scale(1.05);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .maritime-title {
         font-size: 34px;
