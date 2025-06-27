@@ -1,6 +1,7 @@
 {
   "name": "trade-exchange-services",
   "private": true,
+  "homepage": "https://tradexchangeservices.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
